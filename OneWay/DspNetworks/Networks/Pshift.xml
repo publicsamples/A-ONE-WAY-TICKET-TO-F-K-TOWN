@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="Pshift" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="Pshift" Bypassed="0" Name="Pshift"
+        ShowParameters="1">
+    <Nodes>
+      <Node ID="faust" FactoryPath="core.faust" Bypassed="0" Name="faust">
+        <Properties>
+          <Property ID="ClassId" Value="pitch"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
+                     ID="shift (semitones)" Automated="1"/>
+          <Parameter MinValue="50.0" MaxValue="10000.0" StepSize="1.0" ID="window (samples)"
+                     DefaultValue="1000.0" Automated="1"/>
+          <Parameter MinValue="1.0" MaxValue="10000.0" StepSize="1.0" ID="xfade (samples)"
+                     DefaultValue="10.0" Automated="1"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter MinValue="-12.0" MaxValue="12.0" StepSize="0.1000000014901161"
+                 ID="shift" Value="1.788139343261719e-7" DefaultValue="0.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="shift (semitones)"/>
+        </Connections>
+      </Parameter>
+      <Parameter MinValue="50.0" MaxValue="10000.0" StepSize="1.0" ID="window"
+                 Value="50.0" DefaultValue="0.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="window (samples)"/>
+        </Connections>
+      </Parameter>
+      <Parameter MinValue="1.0" MaxValue="10000.0" StepSize="1.0" ID="xfade" Value="1.0"
+                 DefaultValue="0.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="xfade (samples)"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

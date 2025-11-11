@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="Comp" Version="0.0.0" AllowCompilation="1">
+  <Node FactoryPath="container.chain" ID="Comp" Bypassed="0" Name="Comp"
+        ShowParameters="1">
+    <Nodes>
+      <Node ID="split9" FactoryPath="container.split" Bypassed="0" Name="comp"
+            NodeColour="4286820953">
+        <Nodes>
+          <Node ID="chain53" FactoryPath="container.chain" Bypassed="0" Name="chain47"
+                NodeColour="4286820953">
+            <Nodes>
+              <Node ID="xfader6" FactoryPath="control.xfader" Bypassed="0" Name="xfader3"
+                    NodeColour="4286820953">
+                <Properties>
+                  <Property ID="NumParameters" Value="2"/>
+                  <Property ID="Mode" Value="Linear"/>
+                </Properties>
+                <SwitchTargets>
+                  <SwitchTarget>
+                    <Connections>
+                      <Connection NodeId="gain16" ParameterId="Gain"/>
+                    </Connections>
+                  </SwitchTarget>
+                  <SwitchTarget>
+                    <Connections>
+                      <Connection NodeId="gain17" ParameterId="Gain"/>
+                    </Connections>
+                  </SwitchTarget>
+                </SwitchTargets>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" DefaultValue="0.0" Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain16" FactoryPath="core.gain" Bypassed="0" Name="gain10"
+                    NodeColour="4286820953">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="chain54" FactoryPath="container.chain" Bypassed="0" Name="chain47"
+                NodeColour="4286820953">
+            <Nodes>
+              <Node ID="comp" FactoryPath="dynamics.comp" Bypassed="0" Name="comp"
+                    NodeColour="4286820953">
+                <ComplexData>
+                  <DisplayBuffers>
+                    <DisplayBuffer Index="-1"/>
+                  </DisplayBuffers>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Threshhold" DefaultValue="0.0"
+                             Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="250.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.4306765496730804" ID="Attack" DefaultValue="50.0"
+                             Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="250.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.4306765496730804" ID="Release" DefaultValue="50.0"
+                             Automated="1"/>
+                  <Parameter MinValue="1.000000014901161" MaxValue="32.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.2968033850193024" ID="Ratio" DefaultValue="1.0"
+                             Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="Sidechain" Value="0.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="branch10" FactoryPath="container.branch" Bypassed="0" Name="branch10"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="chain55" FactoryPath="container.chain" Bypassed="0" Name="chain55">
+                    <Nodes/>
+                    <Parameters/>
+                  </Node>
+                  <Node ID="split10" FactoryPath="container.split" Bypassed="0" Name="split10">
+                    <Nodes>
+                      <Node ID="chain56" FactoryPath="container.chain" Bypassed="0" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                      <Node ID="chain57" FactoryPath="container.chain" Bypassed="0" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                      <Node ID="chain59" FactoryPath="container.chain" Bypassed="0" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                      <Node ID="chain58" FactoryPath="container.chain" Bypassed="0" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                  <Node ID="split14" FactoryPath="container.split" Bypassed="0" Name="split10">
+                    <Nodes>
+                      <Node ID="chain68" FactoryPath="container.chain" Bypassed="0" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                      <Node ID="chain69" FactoryPath="container.chain" Bypassed="1" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                      <Node ID="chain70" FactoryPath="container.chain" Bypassed="1" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                      <Node ID="chain71" FactoryPath="container.chain" Bypassed="1" Name="chain56">
+                        <Nodes/>
+                        <Parameters/>
+                      </Node>
+                    </Nodes>
+                    <Parameters/>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="2" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain17" FactoryPath="core.gain" Bypassed="0" Name="gain10"
+                    NodeColour="4286820953">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="CompMix" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="xfader6" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Threshold" MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                 SkewFactor="5.422270774841309" Value="-98.79999998211861" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="comp" ParameterId="Threshhold"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Attack" MinValue="0.0" MaxValue="250.0" StepSize="0.1000000014901161"
+                 SkewFactor="0.4306765496730804" Value="0.0" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="comp" ParameterId="Attack"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="release" MinValue="0.0" MaxValue="250.0" StepSize="0.1000000014901161"
+                 SkewFactor="0.4306765496730804" Value="1.000000014901161" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="comp" ParameterId="Release"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Ratio" MinValue="1.000000014901161" MaxValue="32.0" StepSize="0.1000000014901161"
+                 SkewFactor="0.2968033850193024" Value="1.000000014901161" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="comp" ParameterId="Ratio"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Boost" MinValue="0.0" MaxValue="2.0" StepSize="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="branch10" ParameterId="Index"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

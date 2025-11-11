@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="SingleFilter" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="SingleFilter" Bypassed="0"
+        Name="ApEight" ShowParameters="1">
+    <Nodes>
+      <Node ID="branch" FactoryPath="container.branch" Bypassed="0" Name="branch"
+            ShowParameters="1">
+        <Nodes>
+          <Node ID="allpass" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+            <ComplexData>
+              <Filters>
+                <Filter Index="-1"/>
+              </Filters>
+            </ComplexData>
+            <Parameters>
+              <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                         ID="Frequency" DefaultValue="1000.0" Automated="1"/>
+              <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                         ID="Q" DefaultValue="1.0" Automated="1"/>
+              <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                         ID="Smoothing" Value="0.009999999776482582"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+            </Parameters>
+          </Node>
+        </Nodes>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="1" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                     Automated="1"/>
+        </Parameters>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="FreqOffset" MinValue="0.0" MaxValue="1.0" Value="0.6647302989130434"
+                 DefaultValue="1.0">
+        <Connections/>
+      </Parameter>
+      <Parameter ID="Resonance" MinValue="0.0" MaxValue="1.0" Value="0.8911752319335938"
+                 DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="allpass" ParameterId="Frequency"/>
+          <Connection NodeId="allpass" ParameterId="Q"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="fmode" MinValue="0.0" MaxValue="3.0" Value="1.649031929347826"
+                 DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="branch" ParameterId="Index"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

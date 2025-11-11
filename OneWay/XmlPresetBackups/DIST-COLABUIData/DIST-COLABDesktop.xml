@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptPanel" id="Panel1" x="0.0" y="0.0" width="720.0"
+             height="560.0" itemColour="4294967295" itemColour2="4294967295"
+             borderRadius="0.0" borderSize="0.0" locked="1" allowCallbacks="All Callbacks"
+             enabled="0"/>
+  <Component type="ScriptPanel" id="Mod1" x="355.0" y="341.0" itemColour="0"
+             itemColour2="0" textColour="4292461764" width="175.0" height="95.0">
+    <Component type="ScriptButton" id="Button7" x="135.0" y="35.0" width="20.0"
+               height="20.0" processorId="Env1" parameterId="EnvInput" parentComponent="Mod1"/>
+    <Component type="ScriptSlider" id="EnvAtkFree1" x="6.0" y="34.0" processorId="Env1"
+               parameterId="EnvAtk" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="1000.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="16.5" parentComponent="Mod1" scaleFactor="0.699999988079071"
+               showValuePopup="Below"/>
+    <Component type="ScriptSlider" id="EnvRelFree1" x="35.0" y="34.0" processorId="Env1"
+               parameterId="EnvRel" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="1000.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="16.5" parentComponent="Mod1" scaleFactor="0.699999988079071"
+               showValuePopup="Below"/>
+    <Component type="ScriptLabel" id="Label53" x="3.0" y="67.0" textColour="4278190080"
+               text="A" width="30.0" height="20.0" fontSize="12.0" parentComponent="Mod1"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label54" x="28.0" y="67.0" textColour="4278190080"
+               text="R" width="40.0" height="20.0" fontSize="12.0" parentComponent="Mod1"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label56" x="2.0" y="4.0" textColour="4278190080"
+               text="MOD 1" width="60.0" height="20.0" fontSize="20.0" parentComponent="Mod1"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label58" x="120.0" y="67.0" textColour="4278190080"
+               text="pre/post" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod1"
+               editable="0"/>
+    <Component type="ScriptSlider" id="FileShaperMix12" x="190.0" y="6.0" processorId="Mod1"
+               parameterId="EnvRel" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="1000.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="16.5" parentComponent="Mod1" scaleFactor="0.699999988079071"/>
+    <Component type="ScriptSlider" id="EnvAtkClk1" x="6.0" y="34.0" processorId="Env1"
+               parameterId="EnvAtkSync" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="Mod1" scaleFactor="0.699999988079071" mode="TempoSync"
+               showValuePopup="Below" visible="0"/>
+    <Component type="ScriptSlider" id="EnvRelClk1" x="36.0" y="34.0" processorId="Env1"
+               parameterId="EnvRelSync" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="Mod1" scaleFactor="0.699999988079071" mode="TempoSync"
+               showValuePopup="Below" visible="0"/>
+    <Component type="ScriptLabel" id="Label59" x="90.0" y="35.0" textColour="4278190080"
+               text="sync" width="40.0" height="20.0" fontSize="12.0" parentComponent="Mod1"
+               editable="0"/>
+    <Component type="ScriptButton" id="Button8" x="71.0" y="36.0" width="20.0"
+               height="20.0" parentComponent="Mod1" processorId="Env1"/>
+    <Component type="ScriptSlider" id="EnvDiv1" x="73.0" y="67.0" processorId="Env1"
+               parameterId="EnvRel" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="20.0" height="20.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="Mod1" scaleFactor="0.5" mode="TempoSync" visible="0"/>
+    <Component type="ScriptLabel" id="Label60" x="89.0" y="67.0" textColour="4278190080"
+               text="DIV" width="40.0" height="20.0" fontSize="12.0" parentComponent="Mod1"
+               editable="0" visible="0"/>
+    <Component type="ScriptComboBox" id="ScriptComboBox1" x="66.0" y="5.0" width="100.0"
+               height="20.0" max="2" parentComponent="Mod1" items="Envelope Follower&#10;LFO"/>
+  </Component>
+  <Component type="ScriptLabel" id="SOUND PLUGIN" x="491.0" y="566.0" textColour="4278190080"
+             fontSize="50.0" width="200.0" height="50.0" text="P.S.T.D" visible="0"/>
+  <Component type="ScriptLabel" id="SOUND PLUGIN1" x="492.0" y="612.0" textColour="4278190080"
+             fontSize="14.0" width="200.0" height="30.0" text="Pretty sounds? Transform! Distort!"
+             visible="0"/>
+  <Component type="ScriptPanel" id="Mod2" x="355.0" y="440.0" itemColour="0"
+             itemColour2="0" textColour="4292461764" width="175.0" height="90.0">
+    <Component type="ScriptButton" id="Button38" x="70.0" y="4.0" width="20.0"
+               height="20.0" processorId="Env2" parameterId="EnvInput" parentComponent="Mod2"/>
+    <Component type="ScriptSlider" id="EnvAtkFree2" x="6.0" y="35.0" processorId="Env2"
+               parameterId="EnvAtk" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="1000.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="16.5" parentComponent="Mod2" scaleFactor="0.699999988079071"/>
+    <Component type="ScriptSlider" id="EnvRelFree2" x="35.0" y="35.0" processorId="Env2"
+               parameterId="EnvRel" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="1000.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="16.5" parentComponent="Mod2" scaleFactor="0.699999988079071"/>
+    <Component type="ScriptLabel" id="Label55" x="3.0" y="64.0" textColour="4278190080"
+               text="A" width="30.0" height="20.0" fontSize="12.0" parentComponent="Mod2"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label69" x="28.0" y="64.0" textColour="4278190080"
+               text="R" width="40.0" height="20.0" fontSize="12.0" parentComponent="Mod2"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label87" x="2.0" y="4.0" textColour="4278190080"
+               text="ENV 2" width="60.0" height="20.0" fontSize="20.0" parentComponent="Mod2"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label88" x="90.0" y="2.0" textColour="4278190080"
+               text="pre/post" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod2"
+               editable="0"/>
+    <Component type="ScriptSlider" id="FileShaperMix13" x="35.0" y="35.0" processorId="Env2"
+               parameterId="EnvRel" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="1000.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="16.5" parentComponent="Mod2" scaleFactor="0.699999988079071"
+               showValuePopup="Below"/>
+    <Component type="ScriptSlider" id="EnvAtkClk2" x="6.0" y="35.0" processorId="Env2"
+               parameterId="EnvAtkSync" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="Mod2" scaleFactor="0.699999988079071" mode="TempoSync"
+               showValuePopup="Below" visible="0"/>
+    <Component type="ScriptSlider" id="EnvRelClk2" x="35.0" y="35.0" processorId="Env2"
+               parameterId="EnvRelSync" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="20.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="Mod2" scaleFactor="0.699999988079071" mode="TempoSync"
+               showValuePopup="Below" visible="0"/>
+    <Component type="ScriptLabel" id="Label89" x="91.0" y="34.0" textColour="4278190080"
+               text="sync" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod2"
+               editable="0"/>
+    <Component type="ScriptButton" id="Button39" x="71.0" y="37.0" width="20.0"
+               height="20.0" parentComponent="Mod2" processorId="Env2"/>
+    <Component type="ScriptSlider" id="EnvDiv2" x="73.0" y="64.0" processorId="Env2"
+               parameterId="EnvRel" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="20.0" height="20.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="Mod2" scaleFactor="0.5" mode="TempoSync" visible="0"/>
+    <Component type="ScriptLabel" id="Label90" x="90.0" y="64.0" textColour="4278190080"
+               text="DIV" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod2"
+               editable="0" visible="0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Mod4" x="533.0" y="440.0" itemColour="0"
+             itemColour2="0" textColour="4291806147" width="175.0" height="90.0"
+             borderRadius="2.0">
+    <Component type="ScriptLabel" id="LFOsync2" x="85.0" y="5.0" textColour="4278190080"
+               text="sync" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod4"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Tempo1" x="13.0" y="38.0" processorId="LFO2"
+               parameterId="Tempo" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" suffix=" dB" middlePosition="9.0"
+               parentComponent="Mod4" scaleFactor="0.699999988079071" mode="Time"/>
+    <Component type="ScriptSlider" id="Div2" x="50.0" y="38.0" processorId="LFO2"
+               parameterId="Div" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="32.0" stepSize="1.0" middlePosition="16.5"
+               parentComponent="Mod4" scaleFactor="0.699999988079071" showValuePopup="Below"/>
+    <Component type="ScriptComboBox" id="Shape2" x="90.0" y="39.0" max="4" width="20.0"
+               height="20.0" items="SAW&#10;SINE&#10;SQUARE&#10;S&amp;H&#10;"
+               processorId="LFO2" parameterId="LFOType" parentComponent="Mod4"/>
+    <Component type="ScriptLabel" id="Label83" x="3.0" y="66.0" textColour="4278190080"
+               text="TEMPO" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod4"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label93" x="50.0" y="66.0" textColour="4278190080"
+               text="DIV" width="30.0" height="20.0" fontSize="12.0" parentComponent="Mod4"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label94" x="78.0" y="66.0" textColour="4278190080"
+               text="SHAPE" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod4"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label95" x="2.0" y="4.0" textColour="4278190080"
+               text="LFO 2" width="60.0" height="20.0" fontSize="20.0" parentComponent="Mod4"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Speed2" x="13.0" y="38.0" processorId="LFO2"
+               parameterId="Tempo" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="4000.0" stepSize="1.0" middlePosition="2000.0"
+               parentComponent="Mod4" scaleFactor="0.699999988079071" mode="TempoSync"
+               showValuePopup="Below"/>
+    <Component type="ScriptComboBox" id="LfoSync2" x="74.0" y="6.0" max="3"
+               width="20.0" height="20.0" items="Free&#10;Sync&#10;DAW" processorId="LFO1"
+               parameterId="LFOType" parentComponent="Mod4"/>
+  </Component>
+  <Component type="ScriptLabel" id="Label39" x="320.0" y="537.0" editable="0"
+             textColour="4278190080" width="60.0" height="20.0" text="PRESETS"/>
+  <Component type="ScriptLabel" id="Label41" x="9.0" y="536.0" editable="0"
+             textColour="4278190080" width="270.0" height="20.0" text="UNTITLED DISTORTION THING"
+             fontSize="20.0"/>
+  <Component type="ScriptButton" id="PanelSwitch2" x="297.0" y="538.0" width="20.0"
+             height="20.0" textColour="4294901760" bgColour="1442775040" itemColour="4293216585"
+             itemColour2="4225765906"/>
+  <Component type="ScriptPanel" id="Master1" x="9.0" y="340.0" width="340.0"
+             height="190.0" itemColour="11393772" itemColour2="11393772" textColour="4291806147"
+             borderRadius="2.0">
+    <Component type="ScriptPanel" id="Routing" x="191.0" y="-1.0" width="150.0"
+               height="135.0" itemColour="11393772" itemColour2="11393772" textColour="4291806147"
+               borderRadius="2.0" parentComponent="Master1">
+      <Component type="ScriptButton" id="Patch1" x="30.0" y="42.0" width="20.0"
+                 height="20.0" radioGroup="11.0" processorId="io1" parameterId="1"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button9" x="79.0" y="42.0" width="20.0"
+                 height="20.0" radioGroup="11.0" processorId="io1" parameterId="3"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button10" x="100.0" y="42.0" width="20.0"
+                 height="20.0" radioGroup="11.0" processorId="io1" parameterId="4"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button12" x="122.0" y="42.0" width="20.0"
+                 height="20.0" radioGroup="11.0" processorId="io1" parameterId="5"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptLabel" id="Label47" x="2.0" y="3.0" textColour="4278190080"
+                 text="AUDIO ROUTING" width="150.0" height="20.0" fontSize="14.0"
+                 parentComponent="Routing" editable="0"/>
+      <Component type="ScriptButton" id="Button14" x="30.0" y="65.0" width="20.0"
+                 height="20.0" radioGroup="12.0" processorId="io2" parameterId="1"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button15" x="55.0" y="65.0" width="20.0"
+                 height="20.0" radioGroup="12.0" processorId="io2" parameterId="2"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button17" x="100.0" y="65.0" width="20.0"
+                 height="20.0" radioGroup="12.0" processorId="io2" parameterId="4"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button18" x="122.0" y="65.0" width="20.0"
+                 height="20.0" radioGroup="12.0" processorId="io2" parameterId="5"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button20" x="30.0" y="87.0" width="20.0"
+                 height="20.0" radioGroup="13.0" processorId="io3" parameterId="1"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button21" x="55.0" y="87.0" width="20.0"
+                 height="20.0" radioGroup="13.0" processorId="io3" parameterId="2"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button22" x="79.0" y="87.0" width="20.0"
+                 height="20.0" radioGroup="13.0" processorId="io3" parameterId="3"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button24" x="122.0" y="87.0" width="20.0"
+                 height="20.0" radioGroup="13.0" processorId="io3" parameterId="5"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button34" x="101.0" y="110.0" width="20.0"
+                 height="20.0" radioGroup="14.0" processorId="io4" parameterId="4"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button35" x="77.0" y="110.0" width="20.0"
+                 height="20.0" radioGroup="14.0" processorId="io4" parameterId="3"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button36" x="54.0" y="110.0" width="20.0"
+                 height="20.0" radioGroup="14.0" processorId="io4" parameterId="2"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptButton" id="Button37" x="31.0" y="110.0" width="20.0"
+                 height="20.0" radioGroup="14.0" processorId="io4" parameterId="1"
+                 itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+                 textColour="16777215" parentComponent="Routing"/>
+      <Component type="ScriptLabel" id="Label42" x="6.0" y="44.0" textColour="4278190080"
+                 text="1" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="2397894134"/>
+      <Component type="ScriptLabel" id="Label72" x="6.0" y="65.0" textColour="4278190080"
+                 text="2" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="434989138"/>
+      <Component type="ScriptLabel" id="Label73" x="6.0" y="86.0" textColour="4278190080"
+                 text="3" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="1810097615"/>
+      <Component type="ScriptLabel" id="Label74" x="6.0" y="107.0" textColour="4278190080"
+                 text="4" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="577245791"/>
+      <Component type="ScriptLabel" id="Label76" x="56.0" y="22.0" textColour="4278190080"
+                 text="1" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="2397894134"/>
+      <Component type="ScriptLabel" id="Label77" x="79.0" y="22.0" textColour="4278190080"
+                 text="2" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="434989138"/>
+      <Component type="ScriptLabel" id="Label78" x="101.0" y="22.0" textColour="4278190080"
+                 text="3" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="1810097615"/>
+      <Component type="ScriptLabel" id="Label79" x="122.0" y="23.0" textColour="4278190080"
+                 text="4" width="20.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0" bgColour="577245791"/>
+      <Component type="ScriptLabel" id="Label81" x="19.0" y="22.0" textColour="4278190080"
+                 text="INPUT" width="40.0" height="20.0" fontSize="12.0" parentComponent="Routing"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="COMP" x="0.0" y="140.0" width="340.0"
+               height="50.0" parentComponent="Master1">
+      <Component type="ScriptSlider" id="FileShaperMix8" x="217.0" y="5.0" processorId="Comp"
+                 parameterId="release" bgColour="4278190080" itemColour2="4278190080"
+                 itemColour="4278190080" width="30.0" height="30.0" text="Mix"
+                 showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+                 isVertical="0" mode="Time" max="1000.0" stepSize="0.1000000014901161"
+                 suffix=" dB" middlePosition="100.0" parentComponent="COMP" scaleFactor="0.699999988079071"
+                 showValuePopup="Below"/>
+      <Component type="ScriptSlider" id="FileShaperMix5" x="92.0" y="5.0" processorId="Comp"
+                 parameterId="Threshold" bgColour="4278190080" itemColour2="4278190080"
+                 itemColour="4278190080" width="30.0" height="30.0" text="Mix"
+                 showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+                 isVertical="0" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+                 suffix=" dB" middlePosition="-50.0" parentComponent="COMP" scaleFactor="0.699999988079071"
+                 showValuePopup="Below"/>
+      <Component type="ScriptLabel" id="Label48" x="80.0" y="35.0" textColour="4278190080"
+                 text="THRESH." width="50.0" height="10.0" fontSize="12.0" parentComponent="COMP"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label49" x="124.0" y="35.0" textColour="4278190080"
+                 text="RATIO" width="50.0" height="10.0" fontSize="12.0" processorId="Dynamics1"
+                 parentComponent="COMP" editable="0"/>
+      <Component type="ScriptSlider" id="FileShaperMix6" x="134.0" y="5.0" processorId="Comp"
+                 parameterId="Ratio" bgColour="4278190080" itemColour2="4278190080"
+                 itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+                 showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+                 isVertical="0" min="1.0" max="32.0" stepSize="0.1000000014901161"
+                 middlePosition="16.5" parentComponent="COMP" scaleFactor="0.699999988079071"
+                 showValuePopup="Below"/>
+      <Component type="ScriptLabel" id="Label50" x="165.0" y="35.0" textColour="4278190080"
+                 text="ATTACK" width="50.0" height="10.0" fontSize="12.0" parentComponent="COMP"
+                 editable="0"/>
+      <Component type="ScriptSlider" id="FileShaperMix7" x="177.0" y="5.0" processorId="Comp"
+                 parameterId="Attack" bgColour="4278190080" itemColour2="4278190080"
+                 itemColour="4278190080" width="30.0" height="30.0" text="Mix"
+                 showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+                 isVertical="0" mode="Time" max="1000.0" stepSize="0.1000000014901161"
+                 suffix=" dB" middlePosition="100.0" parentComponent="COMP" scaleFactor="0.699999988079071"
+                 showValuePopup="Below"/>
+      <Component type="ScriptButton" id="Button6" x="9.0" y="8.0" width="30.0"
+                 height="20.0" processorId="Comp" parameterId="Enabled" parentComponent="COMP"/>
+      <Component type="ScriptLabel" id="Label52" x="210.0" y="35.0" textColour="4278190080"
+                 text="RELEASE" width="50.0" height="10.0" fontSize="12.0" parentComponent="COMP"
+                 editable="0"/>
+      <Component type="ScriptButton" id="Button11" x="47.0" y="8.0" width="30.0"
+                 height="20.0" processorId="Comp" parameterId="Boost" parentComponent="COMP"/>
+      <Component type="ScriptLabel" id="Label82" x="49.0" y="35.0" textColour="4278190080"
+                 text="UP" width="30.0" height="10.0" fontSize="12.0" processorId="Dynamics1"
+                 parentComponent="COMP"/>
+      <Component type="ScriptLabel" id="Label86" x="0.0" y="35.0" textColour="4278190080"
+                 text="POWER" width="50.0" height="10.0" fontSize="12.0" processorId="Dynamics1"
+                 parentComponent="COMP"/>
+      <Component type="ScriptLabel" id="Label57" x="267.0" y="1.0" textColour="4278190080"
+                 text="COMP RESSOR" width="50.0" height="50.0" fontSize="12.0"
+                 parentComponent="COMP" editable="0"/>
+    </Component>
+    <Component type="ScriptButton" id="Button41" x="117.0" y="150.0" width="20.0"
+               height="20.0" radioGroup="11.0" processorId="io1" parameterId="2"
+               itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+               textColour="16777215" parentComponent="Master1" visible="0"/>
+    <Component type="ScriptSlider" id="FileGain1" x="19" y="34.0" style="Vertical"
+               width="20.0" height="80.0" showTextBox="0" processorId="Master"
+               parameterId="1" parentComponent="Master1" bgColour="2397894134"
+               isPluginParameter="1" pluginParameterName="Master - Filter Gain"
+               middlePosition="-18.0" mode="Decibel" min="-100.0" max="0.0"
+               stepSize="0.1" suffix=" dB" defaultValue="-18.0"/>
+    <Component type="ScriptSlider" id="Knob6" x="52" y="34.0" style="Vertical"
+               width="20.0" height="80.0" showTextBox="0" processorId="Master"
+               parameterId="2" parentComponent="Master1" bgColour="434989138"
+               isPluginParameter="1" pluginParameterName="Master - Modifier Gain"
+               middlePosition="-18.0" mode="Decibel" min="-100.0" max="0.0"
+               stepSize="0.1" suffix=" dB" defaultValue="-18.0"/>
+    <Component type="ScriptSlider" id="Knob8" x="85" y="34.0" style="Vertical"
+               width="20.0" height="80.0" showTextBox="0" processorId="Master"
+               parameterId="3" parentComponent="Master1" bgColour="1810097615"
+               isPluginParameter="1" pluginParameterName="Master - Multi-Filter Gain"
+               middlePosition="-18.0" mode="Decibel" min="-100.0" max="0.0"
+               stepSize="0.1" suffix=" dB" defaultValue="-18.0"/>
+    <Component type="ScriptSlider" id="Knob9" x="118" y="34.0" style="Vertical"
+               width="20.0" height="80.0" showTextBox="0" processorId="Master"
+               parameterId="4" parentComponent="Master1" bgColour="577245791"
+               isPluginParameter="1" pluginParameterName="Master - Clip Gain"
+               middlePosition="-18.0" mode="Decibel" min="-100.0" max="0.0"
+               stepSize="0.1" suffix=" dB" defaultValue="-18.0"/>
+    <Component type="ScriptSlider" id="Knob10" x="153.0" y="34.0" style="Vertical"
+               width="20.0" height="80.0" showTextBox="0" processorId="Master"
+               parameterId="Master" parentComponent="Master1" bgColour="1440089092"
+               mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" isPluginParameter="1" pluginParameterName="Master - Output"
+               defaultValue="-18.0"/>
+    <Component type="ScriptLabel" id="Label51" x="7.0" y="112.0" textColour="4278190080"
+               text="1" width="40.0" height="20.0" fontSize="12.0" parentComponent="Master1"
+               editable="0" bgColour="2397894134"/>
+    <Component type="ScriptLabel" id="Label65" x="40.0" y="112.0" textColour="4278190080"
+               text="2" width="40.0" height="20.0" fontSize="12.0" parentComponent="Master1"
+               editable="0" bgColour="434989138"/>
+    <Component type="ScriptLabel" id="Label66" x="73.0" y="112.0" textColour="4278190080"
+               text="3" width="40.0" height="20.0" fontSize="12.0" parentComponent="Master1"
+               editable="0" bgColour="1810097615"/>
+    <Component type="ScriptLabel" id="Label67" x="112.0" y="112.0" textColour="4278190080"
+               text="4" width="30.0" height="20.0" fontSize="12.0" parentComponent="Master1"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label68" x="142.0" y="113.0" textColour="4278190080"
+               text="MASTER" width="50.0" height="20.0" fontSize="12.0" parentComponent="Master1"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label91" x="58.0" y="8.0" textColour="4278190080"
+               text="MASTER" width="80.0" height="10.0" fontSize="14.0" parentComponent="Master1"
+               editable="0"/>
+    <Component type="ScriptButton" id="Button48" x="146.0" y="169.0" width="20.0"
+               height="20.0" radioGroup="12.0" processorId="io2" parameterId="3"
+               itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+               textColour="16777215" parentComponent="Master1" visible="0"/>
+    <Component type="ScriptButton" id="Button55" x="174.0" y="190.0" width="20.0"
+               height="20.0" radioGroup="13.0" processorId="io3" parameterId="4"
+               itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+               textColour="16777215" parentComponent="Master1" visible="0"/>
+    <Component type="ScriptButton" id="Button58" x="229.0" y="233.0" width="20.0"
+               height="20.0" radioGroup="15.0" processorId="io5" parameterId="6"
+               itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+               textColour="16777215" parentComponent="Master1" visible="0"/>
+    <Component type="ScriptButton" id="Button65" x="201.0" y="212.0" width="20.0"
+               height="20.0" radioGroup="14.0" processorId="io4" parameterId="5"
+               itemColour="3355443" bgColour="16777215" itemColour2="1118481"
+               textColour="16777215" parentComponent="Master1" visible="0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Slot1" x="8.0" y="-3.0" width="170.0"
+             height="330.0" itemColour="0" itemColour2="268435456">
+    <Component type="ScriptPanel" id="FileShaper1" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="2397894134" itemColour2="2397894134"
+               textColour="4278190080" bgColour="2397894134" processorId="FileShape"
+               locked="1" parentComponent="Slot1">
+      <Component type="ScriptPanel" id="File" x="9.0" y="159.0" width="150.0"
+                 height="90.0" itemColour="15060943" itemColour2="5327177" textColour="4278190080"
+                 parentComponent="FileShaper1">
+        <Component type="ScriptAudioWaveform" id="AudioWaveform1" x="10.0" y="10.0"
+                   parentComponent="File" width="130.0" height="60.0" processorId="Slot1"
+                   showFileName="0" bgColour="4278190080" itemColour2="4294967295"
+                   itemColour="2717908992" enableRange="0"/>
+      </Component>
+      <Component type="ScriptLabel" id="Label4" x="82.0" y="67.0" parentComponent="FileShaper1"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label5" x="0.0" y="131.0" parentComponent="FileShaper1"
+                 textColour="4278190080" width="60.0" height="20.0" text="SMTH"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label12" x="0.0" y="9.0" parentComponent="FileShaper1"
+                 textColour="4278190080" width="158.0" height="20.0" text="FILE SHAPER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label2" x="82.0" y="131.0" parentComponent="FileShaper1"
+                 textColour="4278190080" width="50.0" height="20.0" text="HP"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="MODIFIER1" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="434989138" itemColour2="434989138"
+               textColour="4278190080" bgColour="434989138" locked="1" parentComponent="Slot1"
+               visible="0">
+      <Component type="ScriptSlider" id="ModiferPitchDiv1" x="99.0" y="158.0"
+                 parentComponent="MODIFIER1" processorId="Slot1" parameterId="ModDiv"
+                 bgColour="4278190080" itemColour2="4278190080" itemColour="4278190080"
+                 width="40.0" height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" max="16.0" stepSize="1.0" middlePosition="8.5"
+                 min="1.0" defaultValue="1.0" showValuePopup="Below" pluginParameterName="Modifier - Divide"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label8" x="96.0" y="196.0" parentComponent="MODIFIER1"
+                 textColour="4278190080" width="50.0" height="20.0" text="DIV"
+                 editable="0"/>
+      <Component type="ScriptSlider" id="ModXfade1" x="26.0" y="158.0" parentComponent="MODIFIER1"
+                 processorId="Slot1" parameterId="ModXf" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" mode="TempoSync" max="18.0"
+                 stepSize="1.0" middlePosition="9.0" showValuePopup="Below" pluginParameterName="Modifier - Xfade"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label9" x="20.0" y="198.0" parentComponent="MODIFIER1"
+                 textColour="4278190080" width="50.0" height="20.0" text="XFADE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label10" x="83.0" y="130.0" parentComponent="MODIFIER1"
+                 textColour="4278190080" width="50.0" height="20.0" text="WINDOW"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label11" x="3.0" y="131.0" parentComponent="MODIFIER1"
+                 textColour="4278190080" width="50.0" height="20.0" text="PITCH"
+                 editable="0"/>
+      <Component type="ScriptComboBox" id="ComboBox3" x="31.0" y="224.0" max="13"
+                 width="100.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="S&amp;H&#10;S&amp;H CLOCK&#10;BITCRUSHER1&#10;BITCRUSHER2&#10;SIN1&#10;SIN2&#10;TRACK&#10;ROUND&#10;SQR&#10;ROUND2&#10;TANH&#10;CLIP&#10;ABS"
+                 processorId="Slot1" parameterId="ModMod" parentComponent="MODIFIER1"/>
+      <Component type="ScriptLabel" id="Label16" x="80.0" y="68.0" parentComponent="MODIFIER1"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label24" x="-1.0" y="6.0" parentComponent="MODIFIER1"
+                 textColour="4278190080" width="100.0" height="20.0" text="MODIFIER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptButton" id="ScriptButton1" x="101.0" y="7.0" width="20.0"
+                 height="20.0" parentComponent="MODIFIER1" processorId="Slot1"
+                 parameterId="PitchShif"/>
+      <Component type="ScriptLabel" id="Label14" x="118.0" y="3.0" parentComponent="MODIFIER1"
+                 textColour="4278190080" width="40.0" height="30.0" text="PITCH SHIFT"
+                 editable="0" fontSize="12.0" fontStyle="Bold"/>
+    </Component>
+    <Component type="ScriptPanel" id="MULTIFILTER1" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="1810097615" itemColour2="1810097615"
+               textColour="4278190080" locked="1" parentComponent="Slot1" visible="0">
+      <Component type="ScriptSliderPack" id="ScriptSliderPack1" x="10.0" y="161.0"
+                 width="150.0" height="90.0" parentComponent="MULTIFILTER1" processorId="Slot1"
+                 itemColour="4278190080" sliderAmount="8.0" SliderPackIndex="4"/>
+      <Component type="ScriptComboBox" id="Filter1Type1" x="89.0" y="96.0" max="8"
+                 width="40.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;korg35LPF&#10;korg35HPF&#10;Comb 1&#10;Comb 2"
+                 processorId="Slot1" parameterId="F1mode" parentComponent="MULTIFILTER1"/>
+      <Component type="ScriptLabel" id="Label26" x="13.0" y="131.0" parentComponent="MULTIFILTER1"
+                 textColour="4278190080" width="30.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label32" x="26.0" y="1.0" parentComponent="MULTIFILTER1"
+                 textColour="4278190080" width="110.0" height="30.0" text="MULTI-FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label31" x="83.0" y="127.0" parentComponent="MULTIFILTER1"
+                 textColour="4278190080" width="50.0" height="30.0" text="MODE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label30" x="73.0" y="66.0" parentComponent="MULTIFILTER1"
+                 textColour="4278190080" width="70.0" height="20.0" text="CUT"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="FILTER1" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="555865612" itemColour2="555865612"
+               textColour="4278190080" parentComponent="Slot1" visible="0">
+      <Component type="ScriptComboBox" id="Filter2Type1" x="90.0" y="97.0" max="12"
+                 width="30.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="1-Pole LP&#10;1-Pole HP&#10;Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;Ladder&#10;Low Shelf&#10;High Shelf&#10;Peak&#10;Reso&#10;AllPass"
+                 processorId="Slot1" parameterId="F2mode" parentComponent="FILTER1"/>
+      <Component type="ScriptLabel" id="Label27" x="82.0" y="66.0" parentComponent="FILTER1"
+                 textColour="4278190080" width="50.0" height="20.0" text="CUTOFF"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label28" x="5.0" y="130.0" parentComponent="FILTER1"
+                 textColour="4278190080" width="40.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label71" x="1.0" y="9.0" parentComponent="FILTER1"
+                 textColour="4278190080" width="70.0" height="20.0" text="FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptSlider" id="Filter2Gain1" x="63.0" y="171.0" parentComponent="FILTER1"
+                 processorId="Slot1" parameterId="F2Gain" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+                 pluginParameterName="Filter - Gain"/>
+      <Component type="ScriptLabel" id="Label44" x="56.0" y="218.0" parentComponent="FILTER1"
+                 textColour="4278190080" width="50.0" height="20.0" text="GAIN"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label29" x="86.0" y="130.0" parentComponent="FILTER1"
+                 textColour="4278190080" width="40.0" height="20.0" text="MODE"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptSlider" id="SlotMix1" x="11.0" y="72.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="Mix" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"/>
+    <Component type="ScriptLabel" id="Label1" x="2.0" y="110.0" parentComponent="Slot1"
+               textColour="4278190080" width="50.0" height="20.0" text="MIX"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Slot1A1" x="89.0" y="72.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="A" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Drive"
+               filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0" showTextBox="0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Drive"/>
+    <Component type="ScriptSlider" id="Slot1C1" x="90.0" y="136.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="C" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Feedback"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" defaultValue="1.0" showValuePopup="Below"
+               isPluginParameter="1" pluginParameterName="File Shaper - Smooth"/>
+    <Component type="ScriptSlider" id="Slot1B1" x="11.0" y="136.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="B" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Pitch" defaultValue="0.5"/>
+    <Component type="ScriptComboBox" id="SlotMode1" x="68.0" y="6.0" width="90.0"
+               height="30.0" max="4" parentComponent="Slot1" items="File Shaper&#10;Modifier&#10;MultiFilter&#10;Filter"/>
+    <Component type="ScriptLabel" id="MOD1" x="5.0" y="10.0" width="50.0" height="20.0"
+               parentComponent="Slot1" textColour="4278190080" text="1" fontSize="15.0"
+               fontStyle="Bold" editable="0"/>
+    <Component type="ScriptLabel" id="Label3" x="79.0" y="183.0" parentComponent="Slot1"
+               textColour="4278190080" width="50.0" height="20.0" text="MODE"
+               editable="0" visible="0"/>
+    <Component type="ScriptSlider" id="MixMod1" x="54.0" y="109.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="MixMod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot1" x="53.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot1" processorId="Slot1"
+               parameterId="MixSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD3" x="22.0" y="306.0" width="70.0"
+               height="20.0" parentComponent="Slot1" textColour="4278190080"
+               text="FEEDBACK" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix2" x="7.0" y="306.0" parentComponent="Slot1"
+               processorId="io2" parameterId="Feed" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="20.0" height="20.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"
+               scaleFactor="0.5"/>
+    <Component type="ScriptSlider" id="MixMod5" x="136.0" y="108.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="Amod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="30.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot2" x="135.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot1" processorId="Slot1"
+               parameterId="AmodSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod6" x="53.0" y="173.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="Bmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot3" x="54.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot1" processorId="Slot1"
+               parameterId="Bmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod7" x="135.0" y="173.0" parentComponent="Slot1"
+               processorId="Slot1" parameterId="Cmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot4" x="134.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot1" processorId="Slot1"
+               parameterId="Cmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD5" x="104.0" y="305.0" width="70.0"
+               height="20.0" parentComponent="Slot1" textColour="4278190080"
+               text="GAIN" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix9" x="102.0" y="305.0" parentComponent="Slot1"
+               processorId="Simple Gain1" parameterId="Gain" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Mix" scaleFactor="0.5" mode="Decibel"
+               min="-100.0" max="36.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Slot2" x="186.0" y="-3.0" width="170.0"
+             height="330.0" itemColour="0" itemColour2="268435456">
+    <Component type="ScriptPanel" id="FileShaper2" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="2397894134" itemColour2="2397894134"
+               textColour="4278190080" bgColour="2397894134" processorId="FileShape"
+               locked="1" parentComponent="Slot2" visible="0">
+      <Component type="ScriptPanel" id="File1" x="9.0" y="159.0" width="150.0"
+                 height="90.0" itemColour="15060943" itemColour2="5327177" textColour="4278190080"
+                 parentComponent="FileShaper2">
+        <Component type="ScriptAudioWaveform" id="AudioWaveform2" x="10.0" y="10.0"
+                   parentComponent="File1" width="130.0" height="60.0" processorId="Slot2"
+                   showFileName="0" bgColour="4278190080" itemColour2="4294967295"
+                   itemColour="2717908992" enableRange="0"/>
+      </Component>
+      <Component type="ScriptLabel" id="Label6" x="82.0" y="67.0" parentComponent="FileShaper2"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label7" x="0.0" y="131.0" parentComponent="FileShaper2"
+                 textColour="4278190080" width="60.0" height="20.0" text="SMTH"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label13" x="0.0" y="9.0" parentComponent="FileShaper2"
+                 textColour="4278190080" width="158.0" height="20.0" text="FILE SHAPER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label15" x="82.0" y="131.0" parentComponent="FileShaper2"
+                 textColour="4278190080" width="50.0" height="20.0" text="HP"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="MODIFIER2" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="434989138" itemColour2="434989138"
+               textColour="4278190080" bgColour="434989138" locked="1" parentComponent="Slot2">
+      <Component type="ScriptSlider" id="ModiferPitchDiv2" x="99.0" y="158.0"
+                 parentComponent="MODIFIER2" processorId="Slot2" parameterId="ModDiv"
+                 bgColour="4278190080" itemColour2="4278190080" itemColour="4278190080"
+                 width="40.0" height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" max="16.0" stepSize="1.0" middlePosition="8.5"
+                 min="1.0" defaultValue="1.0" showValuePopup="Below" pluginParameterName="Modifier - Divide"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label17" x="96.0" y="196.0" parentComponent="MODIFIER2"
+                 textColour="4278190080" width="50.0" height="20.0" text="DIV"
+                 editable="0"/>
+      <Component type="ScriptSlider" id="ModXfade2" x="26.0" y="158.0" parentComponent="MODIFIER2"
+                 processorId="Slot2" parameterId="ModXf" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" mode="TempoSync" max="18.0"
+                 stepSize="1.0" middlePosition="9.0" showValuePopup="Below" pluginParameterName="Modifier - Xfade"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label18" x="20.0" y="198.0" parentComponent="MODIFIER2"
+                 textColour="4278190080" width="50.0" height="20.0" text="XFADE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label19" x="83.0" y="130.0" parentComponent="MODIFIER2"
+                 textColour="4278190080" width="50.0" height="20.0" text="WINDOW"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label20" x="3.0" y="131.0" parentComponent="MODIFIER2"
+                 textColour="4278190080" width="50.0" height="20.0" text="PITCH"
+                 editable="0"/>
+      <Component type="ScriptComboBox" id="ComboBox4" x="31.0" y="224.0" max="13"
+                 width="100.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="S&amp;H&#10;S&amp;H CLOCK&#10;BITCRUSHER1&#10;BITCRUSHER2&#10;SIN1&#10;SIN2&#10;TRACK&#10;ROUND&#10;SQR&#10;ROUND2&#10;TANH&#10;CLIP&#10;ABS"
+                 processorId="Slot2" parameterId="ModMod" parentComponent="MODIFIER2"/>
+      <Component type="ScriptLabel" id="Label21" x="80.0" y="68.0" parentComponent="MODIFIER2"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label25" x="-1.0" y="6.0" parentComponent="MODIFIER2"
+                 textColour="4278190080" width="100.0" height="20.0" text="MODIFIER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptButton" id="ScriptButton2" x="101.0" y="7.0" width="20.0"
+                 height="20.0" parentComponent="MODIFIER2" processorId="Slot2"
+                 parameterId="PitchShif"/>
+      <Component type="ScriptLabel" id="Label22" x="118.0" y="3.0" parentComponent="MODIFIER2"
+                 textColour="4278190080" width="40.0" height="30.0" text="PITCH SHIFT"
+                 editable="0" fontSize="12.0" fontStyle="Bold"/>
+    </Component>
+    <Component type="ScriptPanel" id="MULTIFILTER2" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="1810097615" itemColour2="1810097615"
+               textColour="4278190080" locked="1" parentComponent="Slot2" visible="0">
+      <Component type="ScriptSliderPack" id="ScriptSliderPack2" x="10.0" y="161.0"
+                 width="150.0" height="90.0" parentComponent="MULTIFILTER2" processorId="Slot2"
+                 itemColour="4278190080" sliderAmount="8.0" SliderPackIndex="4"/>
+      <Component type="ScriptComboBox" id="Filter1Type2" x="89.0" y="96.0" max="8"
+                 width="40.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;korg35LPF&#10;korg35HPF&#10;Comb 1&#10;Comb 2"
+                 processorId="Slot2" parameterId="F1mode" parentComponent="MULTIFILTER2"/>
+      <Component type="ScriptLabel" id="Label33" x="13.0" y="131.0" parentComponent="MULTIFILTER2"
+                 textColour="4278190080" width="30.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label34" x="26.0" y="1.0" parentComponent="MULTIFILTER2"
+                 textColour="4278190080" width="110.0" height="30.0" text="MULTI-FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label35" x="83.0" y="127.0" parentComponent="MULTIFILTER2"
+                 textColour="4278190080" width="50.0" height="30.0" text="MODE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label36" x="73.0" y="66.0" parentComponent="MULTIFILTER2"
+                 textColour="4278190080" width="70.0" height="20.0" text="CUT"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="FILTER2" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="555865612" itemColour2="555865612"
+               textColour="4278190080" parentComponent="Slot2" visible="0">
+      <Component type="ScriptComboBox" id="Filter2Type2" x="90.0" y="97.0" max="12"
+                 width="30.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="1-Pole LP&#10;1-Pole HP&#10;Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;Ladder&#10;Low Shelf&#10;High Shelf&#10;Peak&#10;Reso&#10;AllPass"
+                 processorId="Slot2" parameterId="F2mode" parentComponent="FILTER2"/>
+      <Component type="ScriptLabel" id="Label37" x="82.0" y="66.0" parentComponent="FILTER2"
+                 textColour="4278190080" width="50.0" height="20.0" text="CUTOFF"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label38" x="5.0" y="130.0" parentComponent="FILTER2"
+                 textColour="4278190080" width="40.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label75" x="1.0" y="9.0" parentComponent="FILTER2"
+                 textColour="4278190080" width="70.0" height="20.0" text="FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptSlider" id="Filter2Gain2" x="63.0" y="171.0" parentComponent="FILTER2"
+                 processorId="Slot2" parameterId="F2Gain" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+                 pluginParameterName="Filter - Gain"/>
+      <Component type="ScriptLabel" id="Label45" x="56.0" y="218.0" parentComponent="FILTER2"
+                 textColour="4278190080" width="50.0" height="20.0" text="GAIN"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label43" x="86.0" y="130.0" parentComponent="FILTER2"
+                 textColour="4278190080" width="40.0" height="20.0" text="MODE"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptSlider" id="SlotMix3" x="11.0" y="72.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="Mix" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"/>
+    <Component type="ScriptLabel" id="Label23" x="2.0" y="110.0" parentComponent="Slot2"
+               textColour="4278190080" width="50.0" height="20.0" text="MIX"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Slot1A2" x="89.0" y="72.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="A" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Drive"
+               filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0" showTextBox="0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Drive"/>
+    <Component type="ScriptSlider" id="Slot1C2" x="90.0" y="136.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="C" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Feedback"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" defaultValue="1.0" showValuePopup="Below"
+               isPluginParameter="1" pluginParameterName="File Shaper - Smooth"/>
+    <Component type="ScriptSlider" id="Slot1B2" x="11.0" y="136.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="B" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Pitch" defaultValue="0.5"/>
+    <Component type="ScriptComboBox" id="SlotMode2" x="68.0" y="6.0" width="90.0"
+               height="30.0" max="4" parentComponent="Slot2" items="File Shaper&#10;Modifier&#10;MultiFilter&#10;Filter"/>
+    <Component type="ScriptLabel" id="MOD4" x="5.0" y="10.0" width="50.0" height="20.0"
+               parentComponent="Slot2" textColour="4278190080" text="2" fontSize="15.0"
+               fontStyle="Bold" editable="0"/>
+    <Component type="ScriptLabel" id="Label46" x="79.0" y="183.0" parentComponent="Slot2"
+               textColour="4278190080" width="50.0" height="20.0" text="MODE"
+               editable="0" visible="0"/>
+    <Component type="ScriptSlider" id="MixMod2" x="54.0" y="109.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="MixMod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot5" x="53.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot2" processorId="Slot2"
+               parameterId="MixSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD6" x="22.0" y="306.0" width="70.0"
+               height="20.0" parentComponent="Slot2" textColour="4278190080"
+               text="FEEDBACK" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix4" x="7.0" y="306.0" parentComponent="Slot2"
+               processorId="io3" parameterId="Feed" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="20.0" height="20.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"
+               scaleFactor="0.5"/>
+    <Component type="ScriptSlider" id="MixMod8" x="136.0" y="108.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="Amod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="30.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot6" x="135.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot2" processorId="Slot2"
+               parameterId="AmodSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod9" x="53.0" y="173.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="Bmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot7" x="54.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot2" processorId="Slot2"
+               parameterId="Bmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod10" x="135.0" y="173.0" parentComponent="Slot2"
+               processorId="Slot2" parameterId="Cmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot8" x="134.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot2" processorId="Slot2"
+               parameterId="Cmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD8" x="104.0" y="305.0" width="70.0"
+               height="20.0" parentComponent="Slot2" textColour="4278190080"
+               text="GAIN" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix10" x="102.0" y="305.0" parentComponent="Slot2"
+               processorId="Simple Gain2" parameterId="Gain" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Mix" scaleFactor="0.5" mode="Decibel"
+               min="-100.0" max="36.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Slot3" x="362.0" y="-3.0" width="170.0"
+             height="330.0" itemColour="0" itemColour2="268435456">
+    <Component type="ScriptPanel" id="FileShaper3" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="2397894134" itemColour2="2397894134"
+               textColour="4278190080" bgColour="2397894134" processorId="FileShape"
+               locked="1" parentComponent="Slot3" visible="0">
+      <Component type="ScriptPanel" id="File2" x="9.0" y="159.0" width="150.0"
+                 height="90.0" itemColour="15060943" itemColour2="5327177" textColour="4278190080"
+                 parentComponent="FileShaper3">
+        <Component type="ScriptAudioWaveform" id="AudioWaveform3" x="10.0" y="10.0"
+                   parentComponent="File2" width="130.0" height="60.0" processorId="Slot3"
+                   showFileName="0" bgColour="4278190080" itemColour2="4294967295"
+                   itemColour="2717908992" enableRange="0"/>
+      </Component>
+      <Component type="ScriptLabel" id="Label70" x="82.0" y="67.0" parentComponent="FileShaper3"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label80" x="0.0" y="131.0" parentComponent="FileShaper3"
+                 textColour="4278190080" width="60.0" height="20.0" text="SMTH"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label84" x="0.0" y="9.0" parentComponent="FileShaper3"
+                 textColour="4278190080" width="158.0" height="20.0" text="FILE SHAPER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label85" x="82.0" y="131.0" parentComponent="FileShaper3"
+                 textColour="4278190080" width="50.0" height="20.0" text="HP"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="MODIFIER3" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="434989138" itemColour2="434989138"
+               textColour="4278190080" bgColour="434989138" locked="1" parentComponent="Slot3">
+      <Component type="ScriptSlider" id="ModiferPitchDiv3" x="99.0" y="158.0"
+                 parentComponent="MODIFIER3" processorId="Slot3" parameterId="ModDiv"
+                 bgColour="4278190080" itemColour2="4278190080" itemColour="4278190080"
+                 width="40.0" height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" max="16.0" stepSize="1.0" middlePosition="8.5"
+                 min="1.0" defaultValue="1.0" showValuePopup="Below" pluginParameterName="Modifier - Divide"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label92" x="96.0" y="196.0" parentComponent="MODIFIER3"
+                 textColour="4278190080" width="50.0" height="20.0" text="DIV"
+                 editable="0"/>
+      <Component type="ScriptSlider" id="ModXfade3" x="26.0" y="158.0" parentComponent="MODIFIER3"
+                 processorId="Slot3" parameterId="ModXf" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" mode="TempoSync" max="18.0"
+                 stepSize="1.0" middlePosition="9.0" showValuePopup="Below" pluginParameterName="Modifier - Xfade"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label96" x="20.0" y="198.0" parentComponent="MODIFIER3"
+                 textColour="4278190080" width="50.0" height="20.0" text="XFADE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label97" x="83.0" y="130.0" parentComponent="MODIFIER3"
+                 textColour="4278190080" width="50.0" height="20.0" text="WINDOW"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label98" x="3.0" y="131.0" parentComponent="MODIFIER3"
+                 textColour="4278190080" width="50.0" height="20.0" text="PITCH"
+                 editable="0"/>
+      <Component type="ScriptComboBox" id="ComboBox5" x="31.0" y="224.0" max="13"
+                 width="100.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="S&amp;H&#10;S&amp;H CLOCK&#10;BITCRUSHER1&#10;BITCRUSHER2&#10;SIN1&#10;SIN2&#10;TRACK&#10;ROUND&#10;SQR&#10;ROUND2&#10;TANH&#10;CLIP&#10;ABS"
+                 processorId="Slot3" parameterId="ModMod" parentComponent="MODIFIER3"/>
+      <Component type="ScriptLabel" id="Label99" x="80.0" y="68.0" parentComponent="MODIFIER3"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label100" x="-1.0" y="6.0" parentComponent="MODIFIER3"
+                 textColour="4278190080" width="100.0" height="20.0" text="MODIFIER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptButton" id="ScriptButton3" x="101.0" y="7.0" width="20.0"
+                 height="20.0" parentComponent="MODIFIER3" processorId="Slot3"
+                 parameterId="PitchShif"/>
+      <Component type="ScriptLabel" id="Label101" x="118.0" y="3.0" parentComponent="MODIFIER3"
+                 textColour="4278190080" width="40.0" height="30.0" text="PITCH SHIFT"
+                 editable="0" fontSize="12.0" fontStyle="Bold"/>
+    </Component>
+    <Component type="ScriptPanel" id="MULTIFILTER3" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="1810097615" itemColour2="1810097615"
+               textColour="4278190080" locked="1" parentComponent="Slot3" visible="0">
+      <Component type="ScriptSliderPack" id="ScriptSliderPack3" x="10.0" y="161.0"
+                 width="150.0" height="90.0" parentComponent="MULTIFILTER3" processorId="Slot3"
+                 itemColour="4278190080" sliderAmount="8.0" SliderPackIndex="4"/>
+      <Component type="ScriptComboBox" id="Filter1Type3" x="89.0" y="96.0" max="8"
+                 width="40.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;korg35LPF&#10;korg35HPF&#10;Comb 1&#10;Comb 2"
+                 processorId="Slot3" parameterId="F1mode" parentComponent="MULTIFILTER3"/>
+      <Component type="ScriptLabel" id="Label102" x="13.0" y="131.0" parentComponent="MULTIFILTER3"
+                 textColour="4278190080" width="30.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label103" x="26.0" y="1.0" parentComponent="MULTIFILTER3"
+                 textColour="4278190080" width="110.0" height="30.0" text="MULTI-FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label104" x="83.0" y="127.0" parentComponent="MULTIFILTER3"
+                 textColour="4278190080" width="50.0" height="30.0" text="MODE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label105" x="73.0" y="66.0" parentComponent="MULTIFILTER3"
+                 textColour="4278190080" width="70.0" height="20.0" text="CUT"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="FILTER3" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="555865612" itemColour2="555865612"
+               textColour="4278190080" parentComponent="Slot3" visible="0">
+      <Component type="ScriptComboBox" id="Filter2Type3" x="90.0" y="97.0" max="12"
+                 width="30.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="1-Pole LP&#10;1-Pole HP&#10;Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;Ladder&#10;Low Shelf&#10;High Shelf&#10;Peak&#10;Reso&#10;AllPass"
+                 processorId="Slot3" parameterId="F2mode" parentComponent="FILTER3"/>
+      <Component type="ScriptLabel" id="Label106" x="82.0" y="66.0" parentComponent="FILTER3"
+                 textColour="4278190080" width="50.0" height="20.0" text="CUTOFF"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label107" x="5.0" y="130.0" parentComponent="FILTER3"
+                 textColour="4278190080" width="40.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label108" x="1.0" y="9.0" parentComponent="FILTER3"
+                 textColour="4278190080" width="70.0" height="20.0" text="FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptSlider" id="Filter2Gain3" x="63.0" y="171.0" parentComponent="FILTER3"
+                 processorId="Slot3" parameterId="F2Gain" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+                 pluginParameterName="Filter - Gain"/>
+      <Component type="ScriptLabel" id="Label109" x="56.0" y="218.0" parentComponent="FILTER3"
+                 textColour="4278190080" width="50.0" height="20.0" text="GAIN"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label110" x="86.0" y="130.0" parentComponent="FILTER3"
+                 textColour="4278190080" width="40.0" height="20.0" text="MODE"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptSlider" id="SlotMix5" x="11.0" y="72.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="Mix" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"/>
+    <Component type="ScriptLabel" id="Label111" x="2.0" y="110.0" parentComponent="Slot3"
+               textColour="4278190080" width="50.0" height="20.0" text="MIX"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Slot1A3" x="89.0" y="72.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="A" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Drive"
+               filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0" showTextBox="0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Drive"/>
+    <Component type="ScriptSlider" id="Slot1C3" x="90.0" y="136.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="C" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Feedback"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" defaultValue="1.0" showValuePopup="Below"
+               isPluginParameter="1" pluginParameterName="File Shaper - Smooth"/>
+    <Component type="ScriptSlider" id="Slot1B3" x="11.0" y="136.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="B" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Pitch" defaultValue="0.5"/>
+    <Component type="ScriptComboBox" id="SlotMode3" x="68.0" y="6.0" width="90.0"
+               height="30.0" max="4" parentComponent="Slot3" items="File Shaper&#10;Modifier&#10;MultiFilter&#10;Filter"/>
+    <Component type="ScriptLabel" id="MOD7" x="5.0" y="10.0" width="50.0" height="20.0"
+               parentComponent="Slot3" textColour="4278190080" text="3" fontSize="15.0"
+               fontStyle="Bold" editable="0"/>
+    <Component type="ScriptLabel" id="Label112" x="79.0" y="183.0" parentComponent="Slot3"
+               textColour="4278190080" width="50.0" height="20.0" text="MODE"
+               editable="0" visible="0"/>
+    <Component type="ScriptSlider" id="MixMod3" x="54.0" y="109.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="MixMod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot9" x="53.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot3" processorId="Slot3"
+               parameterId="MixSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD9" x="22.0" y="306.0" width="70.0"
+               height="20.0" parentComponent="Slot3" textColour="4278190080"
+               text="FEEDBACK" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix6" x="7.0" y="306.0" parentComponent="Slot3"
+               processorId="io4" parameterId="Feed" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="20.0" height="20.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"
+               scaleFactor="0.5"/>
+    <Component type="ScriptSlider" id="MixMod11" x="136.0" y="108.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="Amod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="30.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot10" x="135.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot3" processorId="Slot3"
+               parameterId="AmodSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod12" x="53.0" y="173.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="Bmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot11" x="54.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot3" processorId="Slot3"
+               parameterId="Bmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod13" x="135.0" y="173.0" parentComponent="Slot3"
+               processorId="Slot3" parameterId="Cmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot12" x="134.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot3" processorId="Slot3"
+               parameterId="Cmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD11" x="104.0" y="305.0" width="70.0"
+               height="20.0" parentComponent="Slot3" textColour="4278190080"
+               text="GAIN" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix11" x="102.0" y="305.0" parentComponent="Slot3"
+               processorId="Simple Gain3" parameterId="Gain" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Mix" scaleFactor="0.5" mode="Decibel"
+               min="-100.0" max="36.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Slot4" x="543.0" y="-3.0" width="170.0"
+             height="330.0" itemColour="0" itemColour2="268435456">
+    <Component type="ScriptPanel" id="FileShaper4" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="2397894134" itemColour2="2397894134"
+               textColour="4278190080" bgColour="2397894134" processorId="FileShape"
+               locked="1" parentComponent="Slot4" visible="0">
+      <Component type="ScriptPanel" id="File3" x="9.0" y="159.0" width="150.0"
+                 height="90.0" itemColour="15060943" itemColour2="5327177" textColour="4278190080"
+                 parentComponent="FileShaper4">
+        <Component type="ScriptAudioWaveform" id="AudioWaveform4" x="10.0" y="10.0"
+                   parentComponent="File3" width="130.0" height="60.0" processorId="Slot4"
+                   showFileName="0" bgColour="4278190080" itemColour2="4294967295"
+                   itemColour="2717908992" enableRange="0"/>
+      </Component>
+      <Component type="ScriptLabel" id="Label113" x="82.0" y="67.0" parentComponent="FileShaper4"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label114" x="0.0" y="131.0" parentComponent="FileShaper4"
+                 textColour="4278190080" width="60.0" height="20.0" text="SMTH"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label115" x="0.0" y="9.0" parentComponent="FileShaper4"
+                 textColour="4278190080" width="158.0" height="20.0" text="FILE SHAPER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label116" x="82.0" y="131.0" parentComponent="FileShaper4"
+                 textColour="4278190080" width="50.0" height="20.0" text="HP"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="MODIFIER4" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="434989138" itemColour2="434989138"
+               textColour="4278190080" bgColour="434989138" locked="1" parentComponent="Slot4">
+      <Component type="ScriptSlider" id="ModiferPitchDiv4" x="99.0" y="158.0"
+                 parentComponent="MODIFIER4" processorId="Slot4" parameterId="ModDiv"
+                 bgColour="4278190080" itemColour2="4278190080" itemColour="4278190080"
+                 width="40.0" height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" max="16.0" stepSize="1.0" middlePosition="8.5"
+                 min="1.0" defaultValue="1.0" showValuePopup="Below" pluginParameterName="Modifier - Divide"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label117" x="96.0" y="196.0" parentComponent="MODIFIER4"
+                 textColour="4278190080" width="50.0" height="20.0" text="DIV"
+                 editable="0"/>
+      <Component type="ScriptSlider" id="ModXfade4" x="26.0" y="158.0" parentComponent="MODIFIER4"
+                 processorId="Slot4" parameterId="ModXf" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" mode="TempoSync" max="18.0"
+                 stepSize="1.0" middlePosition="9.0" showValuePopup="Below" pluginParameterName="Modifier - Xfade"
+                 isPluginParameter="1"/>
+      <Component type="ScriptLabel" id="Label118" x="20.0" y="198.0" parentComponent="MODIFIER4"
+                 textColour="4278190080" width="50.0" height="20.0" text="XFADE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label119" x="83.0" y="130.0" parentComponent="MODIFIER4"
+                 textColour="4278190080" width="50.0" height="20.0" text="WINDOW"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label120" x="3.0" y="131.0" parentComponent="MODIFIER4"
+                 textColour="4278190080" width="50.0" height="20.0" text="PITCH"
+                 editable="0"/>
+      <Component type="ScriptComboBox" id="ComboBox6" x="31.0" y="224.0" max="13"
+                 width="100.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="S&amp;H&#10;S&amp;H CLOCK&#10;BITCRUSHER1&#10;BITCRUSHER2&#10;SIN1&#10;SIN2&#10;TRACK&#10;ROUND&#10;SQR&#10;ROUND2&#10;TANH&#10;CLIP&#10;ABS"
+                 processorId="Slot4" parameterId="ModMod" parentComponent="MODIFIER4"/>
+      <Component type="ScriptLabel" id="Label121" x="80.0" y="68.0" parentComponent="MODIFIER4"
+                 textColour="4278190080" width="50.0" height="20.0" text="DRIVE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label122" x="-1.0" y="6.0" parentComponent="MODIFIER4"
+                 textColour="4278190080" width="100.0" height="20.0" text="MODIFIER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptButton" id="ScriptButton4" x="101.0" y="7.0" width="20.0"
+                 height="20.0" parentComponent="MODIFIER4" processorId="Slot4"
+                 parameterId="PitchShif"/>
+      <Component type="ScriptLabel" id="Label123" x="118.0" y="3.0" parentComponent="MODIFIER4"
+                 textColour="4278190080" width="40.0" height="30.0" text="PITCH SHIFT"
+                 editable="0" fontSize="12.0" fontStyle="Bold"/>
+    </Component>
+    <Component type="ScriptPanel" id="MULTIFILTER4" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="1810097615" itemColour2="1810097615"
+               textColour="4278190080" locked="1" parentComponent="Slot4" visible="0">
+      <Component type="ScriptSliderPack" id="ScriptSliderPack4" x="10.0" y="161.0"
+                 width="150.0" height="90.0" parentComponent="MULTIFILTER4" processorId="Slot4"
+                 itemColour="4278190080" sliderAmount="8.0" SliderPackIndex="4"/>
+      <Component type="ScriptComboBox" id="Filter1Type4" x="89.0" y="96.0" max="8"
+                 width="40.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;korg35LPF&#10;korg35HPF&#10;Comb 1&#10;Comb 2"
+                 processorId="Slot4" parameterId="F1mode" parentComponent="MULTIFILTER4"/>
+      <Component type="ScriptLabel" id="Label124" x="13.0" y="131.0" parentComponent="MULTIFILTER4"
+                 textColour="4278190080" width="30.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label125" x="26.0" y="1.0" parentComponent="MULTIFILTER4"
+                 textColour="4278190080" width="110.0" height="30.0" text="MULTI-FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptLabel" id="Label126" x="83.0" y="127.0" parentComponent="MULTIFILTER4"
+                 textColour="4278190080" width="50.0" height="30.0" text="MODE"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label127" x="73.0" y="66.0" parentComponent="MULTIFILTER4"
+                 textColour="4278190080" width="70.0" height="20.0" text="CUT"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptPanel" id="FILTER4" x="0.0" y="42.0" width="170.0"
+               height="260.0" itemColour="555865612" itemColour2="555865612"
+               textColour="4278190080" parentComponent="Slot4" visible="0">
+      <Component type="ScriptComboBox" id="Filter2Type4" x="90.0" y="97.0" max="12"
+                 width="30.0" height="30.0" bgColour="4294967295" itemColour="4281545523"
+                 items="1-Pole LP&#10;1-Pole HP&#10;Low Pass&#10;High Pass&#10;Band Pass&#10;Notch&#10;Ladder&#10;Low Shelf&#10;High Shelf&#10;Peak&#10;Reso&#10;AllPass"
+                 processorId="Slot3" parameterId="F2mode" parentComponent="FILTER4"/>
+      <Component type="ScriptLabel" id="Label128" x="82.0" y="66.0" parentComponent="FILTER4"
+                 textColour="4278190080" width="50.0" height="20.0" text="CUTOFF"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label129" x="5.0" y="130.0" parentComponent="FILTER4"
+                 textColour="4278190080" width="40.0" height="20.0" text="Q" editable="0"/>
+      <Component type="ScriptLabel" id="Label130" x="1.0" y="9.0" parentComponent="FILTER4"
+                 textColour="4278190080" width="70.0" height="20.0" text="FILTER"
+                 fontSize="20.0" editable="0"/>
+      <Component type="ScriptSlider" id="Filter2Gain4" x="63.0" y="171.0" parentComponent="FILTER4"
+                 processorId="Slot3" parameterId="F2Gain" bgColour="4278190080"
+                 itemColour2="4278190080" itemColour="4278190080" width="40.0"
+                 height="40.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+                 numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+                 pluginParameterName="Filter - Gain"/>
+      <Component type="ScriptLabel" id="Label131" x="56.0" y="218.0" parentComponent="FILTER4"
+                 textColour="4278190080" width="50.0" height="20.0" text="GAIN"
+                 editable="0"/>
+      <Component type="ScriptLabel" id="Label132" x="86.0" y="130.0" parentComponent="FILTER4"
+                 textColour="4278190080" width="40.0" height="20.0" text="MODE"
+                 editable="0"/>
+    </Component>
+    <Component type="ScriptSlider" id="SlotMix7" x="11.0" y="72.0" parentComponent="Slot4"
+               processorId="Slot4" parameterId="Mix" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"/>
+    <Component type="ScriptLabel" id="Label133" x="2.0" y="110.0" parentComponent="Slot4"
+               textColour="4278190080" width="50.0" height="20.0" text="MIX"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Slot1A4" x="89.0" y="72.0" parentComponent="Slot4"
+               processorId="Slot4" parameterId="A" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Drive"
+               filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0" showTextBox="0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Drive"/>
+    <Component type="ScriptSlider" id="Slot1C4" x="90.0" y="136.0" parentComponent="Slot4"
+               processorId="Slot4" parameterId="C" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Feedback"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" defaultValue="1.0" showValuePopup="Below"
+               isPluginParameter="1" pluginParameterName="File Shaper - Smooth"/>
+    <Component type="ScriptSlider" id="Slot1B4" x="11.0" y="136.0" parentComponent="Slot4"
+               processorId="Slot4" parameterId="B" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="40.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" middlePosition="0.5" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Pitch" defaultValue="0.5"/>
+    <Component type="ScriptComboBox" id="SlotMode4" x="68.0" y="6.0" width="90.0"
+               height="30.0" max="4" parentComponent="Slot4" items="File Shaper&#10;Modifier&#10;MultiFilter&#10;Filter"/>
+    <Component type="ScriptLabel" id="MOD10" x="5.0" y="10.0" width="50.0" height="20.0"
+               parentComponent="Slot4" textColour="4278190080" text="4" fontSize="15.0"
+               fontStyle="Bold" editable="0"/>
+    <Component type="ScriptLabel" id="Label134" x="79.0" y="183.0" parentComponent="Slot4"
+               textColour="4278190080" width="50.0" height="20.0" text="MODE"
+               editable="0" visible="0"/>
+    <Component type="ScriptSlider" id="MixMod4" x="54.0" y="109.0" parentComponent="Slot4"
+               processorId="Slot3" parameterId="MixMod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot13" x="53.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot4" processorId="Slot4"
+               parameterId="MixSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD12" x="22.0" y="306.0" width="70.0"
+               height="20.0" parentComponent="Slot4" textColour="4278190080"
+               text="FEEDBACK" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix8" x="7.0" y="306.0" parentComponent="Slot4"
+               processorId="io6" parameterId="Feed" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="20.0" height="20.0" text="Mix"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" showValuePopup="Below" isPluginParameter="1" pluginParameterName="File Shaper - Mix"
+               scaleFactor="0.5"/>
+    <Component type="ScriptSlider" id="MixMod14" x="136.0" y="108.0" parentComponent="Slot4"
+               processorId="Slot4" parameterId="Amod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="30.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot14" x="135.0" y="76.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot4" processorId="Slot4"
+               parameterId="AmodSrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod15" x="53.0" y="173.0" parentComponent="Slot4"
+               processorId="Slot4" parameterId="Bmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot15" x="54.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot4" processorId="Slot4"
+               parameterId="Bmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptSlider" id="MixMod16" x="135.0" y="173.0" parentComponent="Slot4"
+               processorId="Slot4" parameterId="Cmod" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Drive" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" showTextBox="0" isVertical="0" scaleFactor="0.550000011920929"
+               min="-1.0" middlePosition="0.0"/>
+    <Component type="ScriptComboBox" id="ModSlot16" x="134.0" y="140.0" width="20.0"
+               height="20.0" max="4" parentComponent="Slot4" processorId="Slot4"
+               parameterId="Cmodsrc" items="ENV1&#10;ENV2&#10;LFO1&#10;LFO2"/>
+    <Component type="ScriptLabel" id="MOD13" x="104.0" y="305.0" width="70.0"
+               height="20.0" parentComponent="Slot4" textColour="4278190080"
+               text="GAIN" fontSize="14.0" fontStyle="Regular" editable="0"/>
+    <Component type="ScriptSlider" id="SlotMix12" x="102.0" y="305.0" parentComponent="Slot4"
+               processorId="Simple Gain4" parameterId="Gain" bgColour="4278190080"
+               itemColour2="4278190080" itemColour="4278190080" width="20.0"
+               height="20.0" text="Mix" showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png"
+               numStrips="125.0" isVertical="0" showValuePopup="Below" isPluginParameter="1"
+               pluginParameterName="File Shaper - Mix" scaleFactor="0.5" mode="Decibel"
+               min="-100.0" max="36.0" stepSize="0.1" suffix=" dB" middlePosition="0.0"/>
+  </Component>
+  <Component type="ScriptPanel" id="Mod3" x="533.0" y="341.0" itemColour="0"
+             itemColour2="0" textColour="4291806147" width="175.0" height="95.0"
+             borderRadius="2.0">
+    <Component type="ScriptLabel" id="LFOsync1" x="122.0" y="69.0" textColour="4278190080"
+               text="sync" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod3"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Tempo" x="13.0" y="36.0" processorId="LFO1"
+               parameterId="Tempo" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="18.0" stepSize="1.0" middlePosition="9.0"
+               parentComponent="Mod3" scaleFactor="0.699999988079071" mode="TempoSync"
+               showValuePopup="Below"/>
+    <Component type="ScriptSlider" id="Div1" x="50.0" y="36.0" processorId="LFO1"
+               parameterId="Div" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="40.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" min="1.0" max="32.0" stepSize="1.0" middlePosition="16.5"
+               parentComponent="Mod3" scaleFactor="0.699999988079071" showValuePopup="Below"/>
+    <Component type="ScriptComboBox" id="Shape1" x="90.0" y="37.0" max="4" width="20.0"
+               height="20.0" items="SAW&#10;SINE&#10;SQUARE&#10;S&amp;H&#10;"
+               processorId="LFO1" parameterId="LFOType" parentComponent="Mod3"/>
+    <Component type="ScriptLabel" id="Label61" x="3.0" y="70.0" textColour="4278190080"
+               text="TEMPO" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod3"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label62" x="50.0" y="70.0" textColour="4278190080"
+               text="DIV" width="30.0" height="20.0" fontSize="12.0" parentComponent="Mod3"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label63" x="78.0" y="70.0" textColour="4278190080"
+               text="SHAPE" width="50.0" height="20.0" fontSize="12.0" parentComponent="Mod3"
+               editable="0"/>
+    <Component type="ScriptLabel" id="Label64" x="2.0" y="4.0" textColour="4278190080"
+               text="LFO 1" width="60.0" height="20.0" fontSize="20.0" parentComponent="Mod3"
+               editable="0"/>
+    <Component type="ScriptSlider" id="Speed1" x="13.0" y="36.0" processorId="LFO1"
+               parameterId="Free" bgColour="4278190080" itemColour2="4278190080"
+               itemColour="4278190080" width="30.0" height="30.0" text="RATIO"
+               showTextBox="0" filmstripImage="{PROJECT_FOLDER}k9.png" numStrips="125.0"
+               isVertical="0" max="4000.0" stepSize="1.0" suffix=" dB" middlePosition="2000.0"
+               parentComponent="Mod3" scaleFactor="0.699999988079071" mode="Time"
+               showValuePopup="Below" visible="0"/>
+    <Component type="ScriptComboBox" id="LfoSync1" x="132.0" y="37.0" max="3"
+               width="20.0" height="20.0" items="Free&#10;Sync&#10;DAW" parentComponent="Mod3"/>
+  </Component>
+  <Component type="ScriptPanel" id="Presets" x="6.0" y="4.0" width="710.0"
+             height="320.0" itemColour="4294967295" itemColour2="4294967295"
+             bgColour="4294967295" textColour="4278190080" visible="0">
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile1" x="6.0" y="6.0"
+               width="700.0" height="310.0" parentComponent="Presets" ContentType="PresetBrowser"
+               bgColour="4160749567" itemColour="4278190080" itemColour2="4278190080"
+               Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: true,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowSearchBar&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;FullPathFavorites&quot;: false,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 3,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: []&#10;}"
+               itemColour3="4278190080" textColour="4278190080"/>
+  </Component>
+</ContentProperties>

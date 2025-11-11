@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="Fgran" AllowCompilation="1" Version="0.0.0">
+  <Node FactoryPath="container.chain" ID="Fgran" Bypassed="0" Name="Fgran"
+        ShowParameters="1">
+    <Nodes>
+      <Node ID="faust" FactoryPath="core.faust" Bypassed="0" Name="faust">
+        <Properties>
+          <Property ID="ClassId" Value="granular"/>
+          <Property ID="NumParameters" Value="0"/>
+        </Properties>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                     ID="decal" Automated="1"/>
+          <Parameter MinValue="0.0" MaxValue="2.0" StepSize="0.001000000047497451"
+                     ID="feedback" Automated="1"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                     ID="population" DefaultValue="1.0" Automated="1"/>
+          <Parameter MinValue="0.125" MaxValue="4.0" StepSize="0.001000000047497451"
+                     ID="speed" DefaultValue="1.0" Automated="1"/>
+          <Parameter MinValue="4.0" MaxValue="12000.0" StepSize="0.001000000047497451"
+                     ID="taille" DefaultValue="10.0" Automated="1"/>
+        </Parameters>
+        <SwitchTargets/>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="pos" MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="decal"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="feed" MinValue="0.0" MaxValue="2.0" StepSize="0.001000000047497451"
+                 Value="1.000000047497451" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="feedback"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="pop" MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="population"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="speed" MinValue="0.125" MaxValue="4.0" StepSize="0.001000000047497451"
+                 Value="1.00000004156027" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="speed"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="rate" MinValue="4.0" MaxValue="12000.0" StepSize="0.001000000047497451"
+                 Value="4.0" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="faust" ParameterId="taille"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="ApEight" Version="0.0.0" AllowCompilation="1">
+  <Node FactoryPath="container.chain" ID="ApEight" Bypassed="0" Name="ApEight"
+        ShowParameters="1">
+    <Nodes>
+      <Node ID="modchain" FactoryPath="container.modchain" Bypassed="0" Name="modchain">
+        <Nodes>
+          <Node ID="pack_resizer" FactoryPath="control.pack_resizer" Bypassed="0"
+                Name="pack_resizer">
+            <ComplexData>
+              <SliderPacks>
+                <SliderPack Index="0" EmbeddedData="32....f+....9C...3O...f+....9C...3O...f+....9C"/>
+              </SliderPacks>
+            </ComplexData>
+            <Parameters>
+              <Parameter MinValue="0.0" MaxValue="128.0" StepSize="1.0" ID="NumSliders"
+                         Value="8.0" DefaultValue="0.0"/>
+            </Parameters>
+          </Node>
+          <Node ID="split" FactoryPath="container.split" Bypassed="0" Name="split">
+            <Nodes>
+              <Node ID="clone_pack" FactoryPath="control.clone_pack" Bypassed="0"
+                    Name="clone_pack">
+                <ModulationTargets>
+                  <Connection NodeId="allpass" ParameterId="Frequency"/>
+                  <Connection NodeId="faust3" ParameterId="freq"/>
+                  <Connection NodeId="faust4" ParameterId="freq"/>
+                  <Connection NodeId="faust5" ParameterId="del"/>
+                </ModulationTargets>
+                <ComplexData>
+                  <SliderPacks>
+                    <SliderPack Index="0"/>
+                  </SliderPacks>
+                </ComplexData>
+                <Parameters>
+                  <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                             Value="8.0" DefaultValue="1.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" DefaultValue="1.0" Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="clone_cable" FactoryPath="control.clone_cable" Bypassed="0"
+                    Name="clone_cable">
+                <Properties>
+                  <Property ID="Mode" Value="Fixed"/>
+                </Properties>
+                <ModulationTargets>
+                  <Connection NodeId="allpass" ParameterId="Q"/>
+                  <Connection NodeId="faust3" ParameterId="Q"/>
+                  <Connection NodeId="faust4" ParameterId="Q"/>
+                  <Connection NodeId="faust5" ParameterId="aN"/>
+                </ModulationTargets>
+                <Parameters>
+                  <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                             Value="8.0" DefaultValue="1.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Gamma" Value="0.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="clone_cable1" FactoryPath="control.clone_cable" Bypassed="0"
+                    Name="clone_cable">
+                <Properties>
+                  <Property ID="Mode" Value="Fixed"/>
+                </Properties>
+                <ModulationTargets>
+                  <Connection NodeId="gain" ParameterId="Gain"/>
+                </ModulationTargets>
+                <Parameters>
+                  <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                             Value="8.0" DefaultValue="1.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Gamma" Value="0.0"/>
+                </Parameters>
+              </Node>
+              <Node ID="clone_cable2" FactoryPath="control.clone_cable" Bypassed="0"
+                    Name="clone_cable">
+                <Properties>
+                  <Property ID="Mode" Value="Fixed"/>
+                </Properties>
+                <ModulationTargets>
+                  <Connection NodeId="branch" ParameterId="Index"/>
+                </ModulationTargets>
+                <Parameters>
+                  <Parameter MinValue="1.0" MaxValue="16.0" StepSize="1.0" ID="NumClones"
+                             Value="8.0" DefaultValue="1.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1.0" ID="Gamma" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+      <Node ID="clone" FactoryPath="container.clone" Bypassed="0" Name="clone"
+            ShowClones="0" ShowParameters="1">
+        <Properties>
+          <Property ID="IsVertical" Value="0"/>
+        </Properties>
+        <Nodes>
+          <Node ID="clone_child" FactoryPath="container.chain" Bypassed="0" Name="clone_child"
+                NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust3" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="klp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust4" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust5" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0" Automated="1"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0" Automated="1"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child1" FactoryPath="container.chain" Bypassed="0"
+                Name="clone_child" NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch8" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust27" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust28" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust29" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" DefaultValue="0.0" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass8" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain8" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child2" FactoryPath="container.chain" Bypassed="0"
+                Name="clone_child" NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch9" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust30" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust31" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust32" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" DefaultValue="0.0" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass9" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain9" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child3" FactoryPath="container.chain" Bypassed="0"
+                Name="clone_child" NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch10" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust33" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust34" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust35" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" DefaultValue="0.0" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass10" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain10" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child4" FactoryPath="container.chain" Bypassed="0"
+                Name="clone_child" NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch11" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust36" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust37" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust38" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" DefaultValue="0.0" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass11" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain11" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child5" FactoryPath="container.chain" Bypassed="0"
+                Name="clone_child" NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch12" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust39" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust40" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust41" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" DefaultValue="0.0" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass12" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain12" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child6" FactoryPath="container.chain" Bypassed="0"
+                Name="clone_child" NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch13" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust42" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust43" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust44" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" DefaultValue="0.0" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass13" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain13" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="clone_child7" FactoryPath="container.chain" Bypassed="0"
+                Name="clone_child" NodeColour="4287927444">
+            <Nodes>
+              <Node ID="branch14" FactoryPath="container.branch" Bypassed="0" Name="branch"
+                    ShowParameters="1">
+                <Nodes>
+                  <Node ID="faust45" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust46" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="khp2"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.5" MaxValue="10.0" StepSize="0.009999999776482582"
+                                 ID="Q" DefaultValue="1.0" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.001000000047497451"
+                                 ID="freq" DefaultValue="0.5" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="faust47" FactoryPath="core.faust" Bypassed="0" Name="faust2">
+                    <Properties>
+                      <Property ID="ClassId" Value="Comb"/>
+                      <Property ID="NumParameters" Value="0"/>
+                    </Properties>
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="0.009999999776482582"
+                                 ID="aN" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="100.0" StepSize="0.009999999776482582"
+                                 ID="del" DefaultValue="0.0" Automated="1"/>
+                    </Parameters>
+                    <SwitchTargets/>
+                  </Node>
+                  <Node ID="allpass14" FactoryPath="filters.allpass" Bypassed="0" Name="allpass">
+                    <ComplexData>
+                      <Filters>
+                        <Filter Index="-1"/>
+                      </Filters>
+                    </ComplexData>
+                    <Parameters>
+                      <Parameter MinValue="20.0" MaxValue="20000.0" SkewFactor="0.2299045622348785"
+                                 ID="Frequency" DefaultValue="1000.0"/>
+                      <Parameter MinValue="0.300000011920929" MaxValue="9.899999618530273" SkewFactor="0.2647178173065186"
+                                 ID="Q" DefaultValue="1.0"/>
+                      <Parameter MinValue="-18.0" MaxValue="18.0" ID="Gain" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" SkewFactor="0.3010300099849701"
+                                 ID="Smoothing" Value="0.009999999776482582"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" ID="Mode" Value="0.0"/>
+                      <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="Enabled" Value="1.0"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters>
+                  <Parameter MinValue="0.0" MaxValue="3" StepSize="1.0" ID="Index" DefaultValue="0.0"
+                             Automated="1"/>
+                </Parameters>
+              </Node>
+              <Node ID="gain14" FactoryPath="core.gain" Bypassed="0" Name="gain">
+                <Parameters>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="Gain" DefaultValue="0.0"/>
+                  <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                             SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+                  <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                             SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+                </Parameters>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters>
+          <Parameter MinValue="1.0" MaxValue="8" StepSize="1.0" ID="NumClones" Value="8.0"
+                     DefaultValue="1.0"/>
+          <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="SplitSignal"
+                     Value="2.0"/>
+        </Parameters>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="FreqOffset" MinValue="0.0" MaxValue="1.0" Value="0.7982810974121094"
+                 DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="clone_pack" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Resonance" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="clone_cable" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="OutGain" MinValue="0.0" MaxValue="1.0" Value="0.7871975907035496"
+                 DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="clone_cable1" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="fmode" MinValue="0.0" MaxValue="3.0" Value="0.0" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="clone_cable2" ParameterId="Value"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>
