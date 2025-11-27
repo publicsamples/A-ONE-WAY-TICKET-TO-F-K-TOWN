@@ -504,6 +504,7 @@ using chain46_t = container::chain<parameter::empty,
                                    math::add<NV>, 
                                    core::smoother<NV>, 
                                    file_player_t<NV>, 
+                                   filters::one_pole<NV>, 
                                    core::gain<NV>, 
                                    core::gain<NV>>;
 
@@ -767,8 +768,9 @@ template <int NV> struct instance: public FileShape_impl::FileShape_t_<NV>
 		auto& add4 = this->getT(1).getT(0).getT(1).getT(2);                  // math::add<NV>
 		auto& smoother = this->getT(1).getT(0).getT(1).getT(3);              // core::smoother<NV>
 		auto& file_player = this->getT(1).getT(0).getT(1).getT(4);           // FileShape_impl::file_player_t<NV>
-		auto& gain = this->getT(1).getT(0).getT(1).getT(5);                  // core::gain<NV>
-		auto& gain9 = this->getT(1).getT(0).getT(1).getT(6);                 // core::gain<NV>
+		auto& one_pole = this->getT(1).getT(0).getT(1).getT(5);              // filters::one_pole<NV>
+		auto& gain = this->getT(1).getT(0).getT(1).getT(6);                  // core::gain<NV>
+		auto& gain9 = this->getT(1).getT(0).getT(1).getT(7);                 // core::gain<NV>
 		
 		// Parameter Connections -------------------------------------------------------------------
 		
@@ -1035,6 +1037,13 @@ template <int NV> struct instance: public FileShape_impl::FileShape_t_<NV>
 		file_player.setParameterT(1, 1.);   // core::file_player::Gate
 		file_player.setParameterT(2, 440.); // core::file_player::RootFrequency
 		file_player.setParameterT(3, 1.);   // core::file_player::FreqRatio
+		
+		one_pole.setParameterT(0, 60.);  // filters::one_pole::Frequency
+		one_pole.setParameterT(1, 1.);   // filters::one_pole::Q
+		one_pole.setParameterT(2, 0.);   // filters::one_pole::Gain
+		one_pole.setParameterT(3, 0.01); // filters::one_pole::Smoothing
+		one_pole.setParameterT(4, 1.);   // filters::one_pole::Mode
+		one_pole.setParameterT(5, 1.);   // filters::one_pole::Enabled
 		
 		;                           // gain::Gain is automated
 		gain.setParameterT(1, 20.); // core::gain::Smoothing

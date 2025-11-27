@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ProjectSettings>
-  <Name value=" OneWayTicket"/>
-  <Version value="0.0.1"/>
+  <Name value="OneWayTicket"/>
+  <Version value="0.0.2"/>
   <Description value=""/>
   <BundleIdentifier value="com.modularsamples.product"/>
-  <PluginCode value="Untd"/>
+  <PluginCode value="Ttft"/>
   <EmbedAudioFiles value="Yes"/>
   <EmbedImageFiles value="Yes"/>
   <SupportFullDynamicsHLAC value="No"/>
